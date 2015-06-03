@@ -1,0 +1,18 @@
+" Start Vundle
+source ~/.vim/vundle.vim
+filetype plugin indent on
+
+" set colorscheme
+syntax enable
+colorscheme jellybeans
+let g:jellybeans_use_lowcolor_black = 0
+
+set nu
+set ruler
+set cursorline
+set colorcolumn=85
+
+" search for ctags from current directory up to $HOME
+set tags=./tags;$HOME
+
+:set grepprg=grep\ -n\ -r\ --\ $*\ *\ /dev/null
