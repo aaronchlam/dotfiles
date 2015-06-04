@@ -10,8 +10,8 @@ then
 fi
 
 # Set up vim
-ln -hfsv $dotfiles/vim $HOME/.vim
-ln -hfsv $dotfiles/vim/vimrc $HOME/.vimrc
+ln -sfnv $dotfiles/vim $HOME/.vim
+ln -sfnv $dotfiles/vim/vimrc $HOME/.vimrc
 
 # Set up tmux
-ln -hfsv $dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+ln -sfnv $dotfiles/tmux/tmux.conf $HOME/.tmux.conf
