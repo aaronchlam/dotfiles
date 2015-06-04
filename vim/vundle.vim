@@ -11,7 +11,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Bundles
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'tomasr/molokai'
 Plugin 'chazy/cscope_maps'
 
 " All plugins must be added before the following line
