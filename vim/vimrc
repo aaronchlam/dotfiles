@@ -9,7 +9,10 @@ colorscheme molokai
 set nu
 set ruler
 set cursorline
-set colorcolumn=85
+set colorcolumn=80
+
+" Indent by filetype
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
 
 " search for ctags from current directory up to $HOME
 set tags=./tags;$HOME
