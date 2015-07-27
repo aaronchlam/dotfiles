@@ -13,9 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 " Bundles
 Plugin 'tomasr/molokai'
 Plugin 'chazy/cscope_maps'
-Plugin 'Townk/vim-autoclose'
 Plugin 'vim-scripts/closetag.vim'
-Plugin 'vim-scripts/matchit.zip'
+Plugin 'jiangmiao/auto-pairs'
 
 " All plugins must be added before the following line
 call vundle#end()            " required
