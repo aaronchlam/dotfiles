@@ -6,11 +6,24 @@ filetype plugin indent on
 syntax enable
 colorscheme molokai
 
-set nu
-set ruler
-set cursorline
+" turn on useful default plugins
+runtime macros/matchit.vim
+
+
+" better search
+set ignorecase
+set smartcase
+
+set history=1000	" practically infinite history
+set nu			" number line
+set ruler		" column numbers
+set laststatus=2
+set cursorline		" highlight the current line
 set colorcolumn=80
 set backspace=2
+
+" Turn off auto commenting for CSS
+autocmd Filetype css setlocal formatoptions-=cro
 
 " Indent by filetype
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
