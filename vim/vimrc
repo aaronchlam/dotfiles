@@ -22,11 +22,10 @@ set cursorline		" highlight the current line
 set colorcolumn=80
 set backspace=2
 
-" Turn off auto commenting for CSS
+" Turn off autocomment for css
 autocmd Filetype css setlocal formatoptions-=cro
 
-" Indent by filetype
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab noignorecase
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
