@@ -21,6 +21,7 @@ set laststatus=2
 set cursorline		" highlight the current line
 set colorcolumn=80
 set backspace=2
+set paste		" paste as it is
 
 " Turn off autocomment for css
 autocmd Filetype css setlocal formatoptions-=cro
