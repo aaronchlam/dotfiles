@@ -1,0 +1,13 @@
+# Global Git Ignores
+
+# Mac OS X
+.DS_Store
+
+# Emacs
+*~
+\#*\#
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+.netrwhist
