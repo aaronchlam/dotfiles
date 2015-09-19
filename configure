@@ -15,3 +15,6 @@ ln -sfnv $dotfiles/vim/vimrc $HOME/.vimrc
 
 # Set up tmux
 ln -sfnv $dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+
+# Set up emacs
+ln -sfnv $dotfiles/emacs/emacs $HOME/.emacs
