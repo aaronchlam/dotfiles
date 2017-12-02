@@ -32,6 +32,12 @@ autocmd Filetype python setlocal ts=4 sw=4 expandtab
 
 autocmd Filetype racket let b:AutoPairs = {'(':')', '[':']', '{':'}', '"':'"', '`':'`'}
 
+" Search down into subfolders
+set path+=**
+
+" Display all matching files
+set wildmenu
+
 " search for ctags from current directory up to $HOME
 set tags=./tags;$HOME
 
