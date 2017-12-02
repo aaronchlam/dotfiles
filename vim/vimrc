@@ -2,13 +2,11 @@
 source ~/.vim/vundle.vim
 filetype plugin indent on
 
+" enable syntax
+syntax enable 
+
 " set colorscheme
-syntax enable
 colorscheme molokai
-
-" turn on useful default plugins
-runtime macros/matchit.vim
-
 
 " better search
 set ignorecase
@@ -38,7 +36,18 @@ set path+=**
 " Display all matching files
 set wildmenu
 
+" netrw settings
+let g:netrw_banner=0	" remove banner
+let g:netrw_liststyle=3	" tree
+let g:netrw_altv=1	" open to the right
+let g:netrw_preview=1	" preview vertically
+
+
 " search for ctags from current directory up to $HOME
 set tags=./tags;$HOME
 
 :set grepprg=grep\ -n\ -r\ --\ $*\ *\ /dev/null
+
+" turn on useful default plugins
+runtime macros/matchit.vim
+
