@@ -13,7 +13,7 @@ set ignorecase
 set smartcase
 
 set history=1000	" practically infinite history
-set nu			" number line
+set relativenumber	" current cursor position is 0
 set ruler		" column numbers
 set laststatus=2
 set cursorline		" highlight the current line
@@ -21,14 +21,13 @@ set colorcolumn=80
 set backspace=2
 
 " Turn off autocomment for css
-autocmd Filetype css setlocal formatoptions-=cro
+setlocal formatoptions-=cro
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab noignorecase
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
-
-autocmd Filetype racket let b:AutoPairs = {'(':')', '[':']', '{':'}', '"':'"', '`':'`'}
+autocmd Filetype javascript setlocal ts=4 sw=4 expandtab
 
 " Search down into subfolders
 set path+=**
