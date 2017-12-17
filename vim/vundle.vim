@@ -15,6 +15,8 @@ Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'pangloss/vim-javascript'
+Plugin 'nikvdp/ejs-syntax'
+Plugin 'digitaltoad/vim-pug'
 
 " All plugins must be added before the following line
 call vundle#end()            " required
