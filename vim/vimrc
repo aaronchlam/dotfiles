@@ -19,16 +19,18 @@ set laststatus=2
 set cursorline		" highlight the current line
 set backspace=2
 
+" Maximum length of columns
+set textwidth=80
+set colorcolumn=+1
+
+
 " Turn off autocomment for css
 setlocal formatoptions-=cro
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab noignorecase
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype json setlocal ts=2 sw=2 expandtab
-autocmd Filetype ejs setlocal ts=2 sw=2 expandtab noignorecase
-autocmd Filetype pug setlocal ts=2 sw=2 expandtab noignorecase
 
 " Search down into subfolders
 set path+=**
