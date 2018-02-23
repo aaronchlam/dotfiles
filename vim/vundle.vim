@@ -11,8 +11,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Bundles
-Plugin 'tomasr/molokai'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+
+Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
+
+" Color scheme bundles
+Plugin 'tomasr/molokai'
+
 
 " All plugins must be added before the following line
 call vundle#end()            " required
