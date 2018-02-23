@@ -17,7 +17,6 @@ set relativenumber	" current cursor position is 0
 set ruler		" column numbers
 set laststatus=2
 set cursorline		" highlight the current line
-set colorcolumn=80
 set backspace=2
 
 " Turn off autocomment for css
