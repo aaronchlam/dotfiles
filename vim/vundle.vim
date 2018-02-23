@@ -12,7 +12,9 @@ Plugin 'gmarik/Vundle.vim'
 
 " Bundles
 Plugin 'tpope/vim-surround'
-Plugin 'Raimondi/delimitMate'
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'ludovicchabant/vim-gutentags'
 
 Plugin 'w0rp/ale'
 Plugin 'pangloss/vim-javascript'
