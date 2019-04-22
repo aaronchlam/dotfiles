@@ -17,7 +17,7 @@ ln -sfnv $dotfiles/vim/vimrc $HOME/.vimrc
 ln -sfnv $dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 
 # Set up emacs
-ln -sfnv $dotfiles/emacs/emacs $HOME/.emacs
+ln -sfnv $dotfiles/emacs $HOME/.emacs.d
 
 # Git
 ln -sfnv $dotfiles/git/gitignore $HOME/.gitignore

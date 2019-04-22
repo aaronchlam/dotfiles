@@ -14,7 +14,7 @@ runtime macros/matchit.vim
 set ignorecase
 set smartcase
 
-set history=1000	" practically infinite history
+set history=10000	" practically infinite history
 set nu			" number line
 set ruler		" column numbers
 set laststatus=2
@@ -31,6 +31,13 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 
 autocmd Filetype racket let b:AutoPairs = {'(':')', '[':']', '{':'}', '"':'"', '`':'`'}
+
+" Finding files
+set path +=**
+
+" Display all matching files when we tab complete
+set wildmenu
+set complete-=i
 
 " search for ctags from current directory up to $HOME
 set tags=./tags;$HOME
