@@ -2,13 +2,11 @@
 source ~/.vim/vundle.vim
 filetype plugin indent on
 
+" enable syntax
+syntax enable 
+
 " set colorscheme
-syntax enable
 colorscheme molokai
-
-" turn on useful default plugins
-runtime macros/matchit.vim
-
 
 " better search
 set ignorecase
@@ -16,21 +14,37 @@ set smartcase
 
 set history=10000	" practically infinite history
 set nu			" number line
+set relativenumber	" current cursor position is 0
 set ruler		" column numbers
 set laststatus=2
 set cursorline		" highlight the current line
-set colorcolumn=80
 set backspace=2
 
+" Maximum length of columns
+set textwidth=80
+set colorcolumn=+1
+
+
 " Turn off autocomment for css
-autocmd Filetype css setlocal formatoptions-=cro
+setlocal formatoptions-=cro
 
 autocmd Filetype html setlocal ts=2 sw=2 expandtab noignorecase
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype python setlocal ts=4 sw=4 expandtab
+autocmd Filetype json setlocal ts=2 sw=2 expandtab
 
-autocmd Filetype racket let b:AutoPairs = {'(':')', '[':']', '{':'}', '"':'"', '`':'`'}
+" Search down into subfolders
+set path+=**
+
+" Display all matching files
+set wildmenu
+
+" netrw settings
+let g:netrw_banner=0	" remove banner
+let g:netrw_liststyle=3	" tree
+let g:netrw_altv=1	" open to the right
+let g:netrw_preview=1	" preview vertically
+
 
 " Finding files
 set path +=**
@@ -43,3 +57,7 @@ set complete-=i
 set tags=./tags;$HOME
 
 :set grepprg=grep\ -n\ -r\ --\ $*\ *\ /dev/null
+
+" turn on useful default plugins
+runtime macros/matchit.vim
+
